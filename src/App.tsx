@@ -74,7 +74,7 @@ function App() {
                 <div style={{ height: 880 }}>
                     {gifURLs && gifURLs.length
                         ?
-                        <ImageList sx={{ width: 880, height: 880, marginLeft: "auto", marginRight: "auto", overflow: "auto" }} cols={3} gap={8} variant="masonry">
+                        <ImageList sx={{ width: 880, height: 1000, marginLeft: "auto", marginRight: "auto", overflow: "auto" }} cols={3} gap={8} variant="masonry">
                             {gifURLs.map((item) => (
                                 <ImageListItem key={item}>
                                     <img
@@ -93,7 +93,7 @@ function App() {
                 {/* Pagination */}
                 {(gifURLs && gifURLs.length) || isSearching
                     ?
-                    <Stack spacing={2} sx={{ alignItems: 'center' }}>
+                    <Stack spacing={2} sx={{ alignItems: 'center', marginTop:"1em" }}>
                         <Pagination count={pageCount ? pageCount : lastPageCountUsed ? lastPageCountUsed : 10} page={(gifURLs && gifURLs.length) ? page + 1 : 0} onChange={handlePageChange} disabled={!gifURLs || !gifURLs.length} />
                     </Stack>
                     : null
