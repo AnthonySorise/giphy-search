@@ -1,0 +1,8 @@
+body{
+    background:#363b59;
+    color:		#80aa84;
+}
+.Mui-focused, input, .MuiInputLabel-root, .MuiOutlinedInput-notchedOutline, .MuiLoadingButton-root, .MuiPaginationItem-root, .MuiCircularProgress-svg{
+    color: 	#80aa84!important;
+    border-color: 	#80aa84!important;
+}
